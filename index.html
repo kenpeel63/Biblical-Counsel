@@ -156,7 +156,15 @@
                 reflection: 'Are you managing your finances according to biblical principles? What financial habit could you change today to honor God?'
             }
         ];
-// COMPLETE CHRONOLOGICAL READING PLAN - 365 Days
+
+       // READING PLANS INFO
+        const plans = {
+            chronological: { name: 'Chronological Reading Plan', days: 365, description: 'Read through the Bible in historical order' },
+            newtestament: { name: 'New Testament Plan', days: 90, description: 'Read the entire New Testament in 90 days' },
+            thematic: { name: 'Thematic Reading Plan', days: 52, description: 'Explore key biblical themes week by week' }
+        };
+
+        // COMPLETE CHRONOLOGICAL READING PLAN - 365 Days
         const chronologicalPlan = [
             { day: 1, readings: ['Genesis 1-3'], description: 'Creation and the Fall' },
             { day: 2, readings: ['Genesis 4-7'], description: 'Cain and Abel, Noah' },
@@ -277,9 +285,8 @@
             { day: 117, readings: ['Psalms 21-30'], description: 'Prayers for Help' },
             { day: 118, readings: ['Psalms 31-40'], description: 'Waiting on God' },
             { day: 119, readings: ['Psalms 41-50'], description: 'Thirst for God' },
-            { day: 120, readings: ['Psalms 51-60'], description: 'Create in Me' }
-        ];
-{ day: 121, readings: ['Psalms 61-70'], description: 'God Our Refuge' },
+            { day: 120, readings: ['Psalms 51-60'], description: 'Create in Me' },
+            { day: 121, readings: ['Psalms 61-70'], description: 'God Our Refuge' },
             { day: 122, readings: ['Psalms 71-80'], description: 'Remember Your People' },
             { day: 123, readings: ['Psalms 81-90'], description: 'Teach Us to Number Our Days' },
             { day: 124, readings: ['Psalms 91-100'], description: 'Make a Joyful Noise' },
@@ -398,9 +405,8 @@
             { day: 237, readings: ['Ezekiel 13-15'], description: 'False Prophets' },
             { day: 238, readings: ['Ezekiel 16-17'], description: 'Allegories' },
             { day: 239, readings: ['Ezekiel 18-20'], description: 'The Soul Who Sins' },
-            { day: 240, readings: ['Ezekiel 21-23'], description: 'Sword of Judgment' }
-        ];
-{ day: 241, readings: ['Ezekiel 24-26'], description: 'Death of Ezekiel\'s Wife' },
+            { day: 240, readings: ['Ezekiel 21-23'], description: 'Sword of Judgment' },
+            { day: 241, readings: ['Ezekiel 24-26'], description: 'Death of Ezekiel\'s Wife' },
             { day: 242, readings: ['Ezekiel 27-29'], description: 'Oracles Against Tyre' },
             { day: 243, readings: ['Ezekiel 30-32'], description: 'Egypt\'s Downfall' },
             { day: 244, readings: ['Ezekiel 33-35'], description: 'Watchman for Israel' },
@@ -526,7 +532,8 @@
             { day: 364, readings: ['Psalms 101-105'], description: 'I Will Walk with Integrity' },
             { day: 365, readings: ['Psalms 106-107'], description: 'Give Thanks to the Lord' }
         ];
-// COMPLETE NEW TESTAMENT READING PLAN - 63 Days
+
+        // NEW TESTAMENT READING PLAN - 90 Days
         const newTestamentPlan = [
             { day: 1, readings: ['Matthew 1-4'], description: 'Birth and Early Ministry of Jesus' },
             { day: 2, readings: ['Matthew 5-7'], description: 'Sermon on the Mount' },
@@ -561,38 +568,66 @@
             { day: 31, readings: ['Acts 19-21'], description: 'Third Missionary Journey' },
             { day: 32, readings: ['Acts 22-24'], description: 'Paul\'s Arrest' },
             { day: 33, readings: ['Acts 25-28'], description: 'Paul\'s Journey to Rome' },
-            { day: 34, readings: ['Romans 1-4'], description: 'Gospel and Justification by Faith' },
-            { day: 35, readings: ['Romans 5-8'], description: 'Life in the Spirit' },
-            { day: 36, readings: ['Romans 9-12'], description: 'Israel and Christian Living' },
-            { day: 37, readings: ['Romans 13-16'], description: 'Love and Final Greetings' },
-            { day: 38, readings: ['1 Corinthians 1-4'], description: 'Division in the Church' },
-            { day: 39, readings: ['1 Corinthians 5-9'], description: 'Moral Issues and Christian Freedom' },
-            { day: 40, readings: ['1 Corinthians 10-13'], description: 'Spiritual Gifts and Love' },
-            { day: 41, readings: ['1 Corinthians 14-16'], description: 'Order in Worship, Resurrection' },
-            { day: 42, readings: ['2 Corinthians 1-6'], description: 'Paul\'s Ministry and Reconciliation' },
-            { day: 43, readings: ['2 Corinthians 7-13'], description: 'Giving and Paul\'s Defense' },
-            { day: 44, readings: ['Galatians 1-6'], description: 'Freedom in Christ' },
-            { day: 45, readings: ['Ephesians 1-6'], description: 'Unity in Christ, Spiritual Warfare' },
-            { day: 46, readings: ['Philippians 1-4'], description: 'Joy in Christ' },
-            { day: 47, readings: ['Colossians 1-4'], description: 'Supremacy of Christ' },
-            { day: 48, readings: ['1 Thessalonians 1-5'], description: 'Living to Please God, Second Coming' },
-            { day: 49, readings: ['2 Thessalonians 1-3'], description: 'Standing Firm in Faith' },
-            { day: 50, readings: ['1 Timothy 1-6'], description: 'Instructions for Church Leaders' },
-            { day: 51, readings: ['2 Timothy 1-4'], description: 'Paul\'s Final Words to Timothy' },
-            { day: 52, readings: ['Titus 1-3', 'Philemon 1'], description: 'Sound Doctrine and Forgiveness' },
-            { day: 53, readings: ['Hebrews 1-4'], description: 'Superiority of Christ' },
-            { day: 54, readings: ['Hebrews 5-8'], description: 'High Priest Forever' },
-            { day: 55, readings: ['Hebrews 9-13'], description: 'New Covenant and Faith' },
-            { day: 56, readings: ['James 1-5'], description: 'Faith and Works' },
-            { day: 57, readings: ['1 Peter 1-5'], description: 'Living Hope and Suffering' },
-            { day: 58, readings: ['2 Peter 1-3', 'Jude 1'], description: 'False Teachers and Final Days' },
-            { day: 59, readings: ['1 John 1-5'], description: 'Walking in Light and Love' },
-            { day: 60, readings: ['2 John 1', '3 John 1', 'Revelation 1-3'], description: 'Letters to Seven Churches' },
-            { day: 61, readings: ['Revelation 4-8'], description: 'Throne Room and Seven Seals' },
-            { day: 62, readings: ['Revelation 9-14'], description: 'Seven Trumpets and Signs' },
-            { day: 63, readings: ['Revelation 15-22'], description: 'Final Judgment and New Creation' }
+            { day: 34, readings: ['Romans 1-3'], description: 'All Have Sinned' },
+            { day: 35, readings: ['Romans 4-6'], description: 'Justification by Faith' },
+            { day: 36, readings: ['Romans 7-9'], description: 'Struggle with Sin' },
+            { day: 37, readings: ['Romans 10-12'], description: 'Life in the Spirit' },
+            { day: 38, readings: ['Romans 13-16'], description: 'Love and Unity' },
+            { day: 39, readings: ['1 Corinthians 1-4'], description: 'Division in the Church' },
+            { day: 40, readings: ['1 Corinthians 5-8'], description: 'Moral Issues' },
+            { day: 41, readings: ['1 Corinthians 9-11'], description: 'Christian Freedom' },
+            { day: 42, readings: ['1 Corinthians 12-14'], description: 'Spiritual Gifts' },
+            { day: 43, readings: ['1 Corinthians 15-16'], description: 'Resurrection' },
+            { day: 44, readings: ['2 Corinthians 1-4'], description: 'Comfort in Trials' },
+            { day: 45, readings: ['2 Corinthians 5-9'], description: 'Ministry of Reconciliation' },
+            { day: 46, readings: ['2 Corinthians 10-13'], description: 'Paul\'s Defense' },
+            { day: 47, readings: ['Galatians 1-3'], description: 'Justified by Faith' },
+            { day: 48, readings: ['Galatians 4-6'], description: 'Freedom in Christ' },
+            { day: 49, readings: ['Ephesians 1-3'], description: 'Our Identity in Christ' },
+            { day: 50, readings: ['Ephesians 4-6'], description: 'Unity and Spiritual Warfare' },
+            { day: 51, readings: ['Philippians 1-4'], description: 'Joy in Christ' },
+            { day: 52, readings: ['Colossians 1-4'], description: 'Supremacy of Christ' },
+            { day: 53, readings: ['1 Thessalonians 1-5'], description: 'Living to Please God' },
+            { day: 54, readings: ['2 Thessalonians 1-3'], description: 'Standing Firm' },
+            { day: 55, readings: ['1 Timothy 1-3'], description: 'Instructions for Church' },
+            { day: 56, readings: ['1 Timothy 4-6'], description: 'Godliness and Contentment' },
+            { day: 57, readings: ['2 Timothy 1-4'], description: 'Paul\'s Final Words' },
+            { day: 58, readings: ['Titus 1-3', 'Philemon 1'], description: 'Sound Doctrine and Forgiveness' },
+            { day: 59, readings: ['Hebrews 1-4'], description: 'Superiority of Christ' },
+            { day: 60, readings: ['Hebrews 5-7'], description: 'High Priest Forever' },
+            { day: 61, readings: ['Hebrews 8-10'], description: 'New Covenant' },
+            { day: 62, readings: ['Hebrews 11-13'], description: 'Hall of Faith' },
+            { day: 63, readings: ['James 1-5'], description: 'Faith and Works' },
+            { day: 64, readings: ['1 Peter 1-2'], description: 'Living Hope' },
+            { day: 65, readings: ['1 Peter 3-5'], description: 'Suffering and Glory' },
+            { day: 66, readings: ['2 Peter 1-3'], description: 'Growing in Grace' },
+            { day: 67, readings: ['1 John 1-3'], description: 'Walk in Light' },
+            { day: 68, readings: ['1 John 4-5'], description: 'God Is Love' },
+            { day: 69, readings: ['2 John 1', '3 John 1', 'Jude 1'], description: 'Walking in Truth' },
+            { day: 70, readings: ['Revelation 1-3'], description: 'Letters to Seven Churches' },
+            { day: 71, readings: ['Revelation 4-6'], description: 'Throne Room and Seals' },
+            { day: 72, readings: ['Revelation 7-9'], description: 'The 144,000 and Trumpets' },
+            { day: 73, readings: ['Revelation 10-12'], description: 'The Little Scroll' },
+            { day: 74, readings: ['Revelation 13-15'], description: 'The Beast and Bowls' },
+            { day: 75, readings: ['Revelation 16-18'], description: 'Fall of Babylon' },
+            { day: 76, readings: ['Revelation 19-22'], description: 'New Heaven and Earth' },
+            { day: 77, readings: ['Matthew 1-7'], description: 'Review: Birth and Sermon' },
+            { day: 78, readings: ['Matthew 8-14'], description: 'Review: Miracles' },
+            { day: 79, readings: ['Matthew 15-21'], description: 'Review: Teachings' },
+            { day: 80, readings: ['Matthew 22-28'], description: 'Review: Final Week' },
+            { day: 81, readings: ['Mark 1-8'], description: 'Review: Gospel of Mark Part 1' },
+            { day: 82, readings: ['Mark 9-16'], description: 'Review: Gospel of Mark Part 2' },
+            { day: 83, readings: ['Luke 1-9'], description: 'Review: Gospel of Luke Part 1' },
+            { day: 84, readings: ['Luke 10-18'], description: 'Review: Gospel of Luke Part 2' },
+            { day: 85, readings: ['Luke 19-24'], description: 'Review: Gospel of Luke Part 3' },
+            { day: 86, readings: ['John 1-10'], description: 'Review: Gospel of John Part 1' },
+            { day: 87, readings: ['John 11-21'], description: 'Review: Gospel of John Part 2' },
+            { day: 88, readings: ['Acts 1-14'], description: 'Review: Early Church' },
+            { day: 89, readings: ['Acts 15-28'], description: 'Review: Paul\'s Journeys' },
+            { day: 90, readings: ['Revelation 1-22'], description: 'Review: Final Revelation' }
         ];
-// COMPLETE THEMATIC READING PLAN - 52 Weeks
+
+        // THEMATIC READING PLAN - 52 Weeks
         const thematicPlan = [
             { day: 1, readings: ['Genesis 1-2', 'John 1'], description: 'Creation and New Creation' },
             { day: 2, readings: ['Genesis 3', 'Romans 5'], description: 'The Fall and Redemption' },
@@ -658,13 +693,7 @@
             }
         }
 
-        // READING PLANS INFO
-        const plans = {
-            chronological: { name: 'Chronological Reading Plan', days: 365, description: 'Read through the Bible in historical order' },
-            newtestament: { name: 'New Testament Plan', days: 63, description: 'Read the entire New Testament in 63 days' },
-            thematic: { name: 'Thematic Reading Plan', days: 52, description: 'Explore key biblical themes week by week' }
-        };
-// FUNCTIONS
+        // FUNCTIONS
         function updateState(updates) {
             Object.assign(state, updates);
             render();
@@ -825,8 +854,7 @@
                     </div>
                 </div>
             `;
-        }
-function renderBible() {
+        }function renderBible() {
             return `
                 <div class="bg-black bg-opacity-60 rounded-lg p-8 border-4 border-double border-yellow-700">
                     <h2 class="text-4xl font-bold text-amber-50 mb-6">📖 SCRIPTURE VAULT</h2>
@@ -890,7 +918,7 @@ function renderBible() {
                         <label class="block text-amber-50 font-bold mb-3">Choose Reading Engine:</label>
                         <select id="planSelect" class="w-full p-4 border-4 border-double border-gray-700 rounded-lg bg-black bg-opacity-60 text-amber-50">
                             <option value="chronological" ${state.selectedPlan === 'chronological' ? 'selected' : ''}>⚙ Chronological (365 days)</option>
-                            <option value="newtestament" ${state.selectedPlan === 'newtestament' ? 'selected' : ''}>📖 New Testament (63 days)</option>
+                            <option value="newtestament" ${state.selectedPlan === 'newtestament' ? 'selected' : ''}>📖 New Testament (90 days)</option>
                             <option value="thematic" ${state.selectedPlan === 'thematic' ? 'selected' : ''}>🔧 Thematic (52 weeks)</option>
                         </select>
                     </div>
@@ -975,7 +1003,8 @@ function renderBible() {
                 </div>
             `;
         }
-function attachEventListeners() {
+
+        function attachEventListeners() {
             const searchInput = document.getElementById('searchInput');
             if (searchInput) {
                 searchInput.addEventListener('input', (e) => updateState({ searchTerm: e.target.value }));
